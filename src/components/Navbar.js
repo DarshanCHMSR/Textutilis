@@ -54,9 +54,41 @@ export default function Navbar(props) {
               id="flexSwitchCheckDefault"
             />
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >
-              Enable DarkMode 
+              Enable {props.mode === "light"?"Dark":"Light"}Mode
             </label>
           </div>
+          <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu">
+      <li><div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"}`}>
+            <input
+              className="form-check-input"
+              type="checkbox"
+              onClick={props.toogleMode}
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >
+              Enable {props.mode === "light"?"Dark":"Light"}Mode
+            </label>
+          </div>
+        </li>
+      <li><div className={`form-check form-switch text-${props.mode1 === "light"?"grey":"light"}`}>
+            <input
+              className="form-check-input"
+              type="checkbox"
+              onClick={props.toogleMode1}
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >
+              Enable {props.mode1 === "light"?"grey":"Light"}Mode
+            </label>
+          </div></li>
+    </ul>
+  </div>
         </div>
       </div>
     </nav>
