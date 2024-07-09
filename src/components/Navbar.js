@@ -3,13 +3,15 @@ import propTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
+    
     <nav
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          {props.title}
-        </a>
+    <a className="navbar-brand" href="/">
+      <img src="favicon-32x32.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+    {props.title}
+    </a>
         <button
           className="navbar-toggler"
           type="button"
