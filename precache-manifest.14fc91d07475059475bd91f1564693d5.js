@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db989b29824abda1ba1ec1998e777f18",
+    "revision": "a8c914b4393b61f009256b98420d6ee6",
     "url": "/Textutilis/index.html"
   },
   {
-    "revision": "dc30d05037be0f011d54",
+    "revision": "b67afeaf64e541de9d5f",
     "url": "/Textutilis/static/css/main.27fd15f6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Textutilis/static/js/3.940f5f6f.chunk.js"
   },
   {
-    "revision": "dc30d05037be0f011d54",
-    "url": "/Textutilis/static/js/main.d3c93345.chunk.js"
+    "revision": "b67afeaf64e541de9d5f",
+    "url": "/Textutilis/static/js/main.7cdd3464.chunk.js"
   },
   {
     "revision": "0ca8dff6dcf3dade684d",
