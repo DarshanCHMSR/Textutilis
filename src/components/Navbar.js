@@ -29,7 +29,7 @@ export default function Navbar(props) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="#scrollspyHeading1">
                 {props.aboutText}
               </a>
             </li>
@@ -41,11 +41,11 @@ export default function Navbar(props) {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-primary" type="submit">
+            <button className="btn btn-success" type="submit">
               Search
             </button>
           </form>
-          <div className={`form-check form-switch text-${props.mode === "light"?"dark":"light"}`}>
+          <div className={`form-check form-switch text-${props.mode === "info"?"dark":"white"}`}>
             <input
               className="form-check-input"
               type="checkbox"
@@ -53,14 +53,10 @@ export default function Navbar(props) {
               role="switch"
               id="flexSwitchCheckDefault"
             />
-            <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >
-              Enable {props.mode === "light"?"Dark":"Light"}Mode
+            <label className={`"form-check-label" text-${"primary"}htmlFor="flexSwitchCheckDefault"`} >
+              Enable {props.mode === "info"?"Dark":"Light"}Mode
             </label>
-          </div>
-
-
-
-
+          </div>      
 {/* 
           <div className="btn-group" role="group" >
     <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
